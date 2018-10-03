@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.appointmentcontroller">
+   <children>
+      <HBox prefHeight="24.0" prefWidth="690.0" style="-fx-background-color: #3B5998;">
+         <children>
+            <JFXButton fx:id="back5" onAction="#back5" prefHeight="42.0" prefWidth="80.0" text="&lt;--">
+               <font>
+                  <Font name="Raleway ExtraBold" size="11.0" />
+               </font>
+            </JFXButton>
+            <Pane prefHeight="57.0" prefWidth="586.0" />
+            <JFXButton fx:id="minimizeclicked" onAction="#minimizeclicked" prefHeight="26.0" prefWidth="52.0" text="-">
+               <font>
+                  <Font name="Raleway ExtraBold Italic" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="closebutton" onAction="#closeclicked" prefHeight="30.0" prefWidth="52.0" text="X">
+               <font>
+                  <Font name="Raleway ExtraBold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fitHeight="489.0" fitWidth="294.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@doctor-women.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="310.0" layoutY="166.0" prefHeight="54.0" prefWidth="316.0" text="Select a day of your appointment">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="447.0" layoutY="53.0" prefHeight="113.0" prefWidth="204.0" text="appointment">
+         <font>
+            <Font name="Lato Heavy" size="35.0" />
+         </font>
+      </Label>
+      <Label layoutX="294.0" layoutY="53.0" prefHeight="113.0" prefWidth="174.0" text="Make an" textFill="#1080d0">
+         <font>
+            <Font name="Lato Heavy" size="35.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="next" layoutX="345.0" layoutY="380.0" onAction="#nextpushed" prefHeight="54.0" prefWidth="163.0" ripplerFill="#4d2ada" style="-fx-background-color: #0095ff;" text="Next step" textFill="WHITE">
+         <font>
+            <Font name="Raleway Medium" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="warning" layoutX="310.0" layoutY="220.0" prefHeight="54.0" prefWidth="316.0" textFill="RED">
+         <font>
+            <Font name="Montserrat Regular" size="13.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="day_sel" layoutX="345.0" layoutY="299.0" prefHeight="31.0" prefWidth="204.0" style="-fx-background-color: #e0e0e0;" stylesheets="@choicebox.css" />
+   </children>
+</AnchorPane>

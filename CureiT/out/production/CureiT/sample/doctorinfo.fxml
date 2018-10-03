@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="doctorinfocontrol" prefHeight="531.0" prefWidth="690.0" style="-fx-background-color: #f3f3f3f3;" styleClass="label1" stylesheets="@human.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.doctorinfocontroller">
+   <children>
+      <ChoiceBox fx:id="doc_sel" layoutX="244.0" layoutY="330.0" prefHeight="42.0" prefWidth="189.0" style="-fx-background-color: #e0e0e0;" stylesheets="@choicebox.css" />
+      <HBox prefHeight="24.0" prefWidth="690.0" style="-fx-background-color: #3B5998;">
+         <children>
+            <JFXButton fx:id="back4" onAction="#back4" prefHeight="42.0" prefWidth="80.0" text="&lt;--">
+               <font>
+                  <Font name="Raleway ExtraBold" size="11.0" />
+               </font>
+            </JFXButton>
+            <Pane prefHeight="57.0" prefWidth="586.0" />
+            <JFXButton fx:id="minimizebutton" onAction="#minimizeclicked" prefHeight="26.0" prefWidth="52.0" text="-">
+               <font>
+                  <Font name="Raleway ExtraBold Italic" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="closebutton" onAction="#closeclicked" prefHeight="30.0" prefWidth="52.0" text="X">
+               <font>
+                  <Font name="Raleway ExtraBold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Label fx:id="docinfo1" alignment="CENTER" contentDisplay="CENTER" layoutX="345.0" layoutY="41.0" prefHeight="246.0" prefWidth="345.0" style="-fx-background-color: #0f6eb3;" styleClass="label1" stylesheets="@human.css" text="Option 2" wrapText="true">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="docinfo" alignment="CENTER" contentDisplay="CENTER" layoutY="41.0" prefHeight="246.0" prefWidth="345.0" style="-fx-background-color: #1080d0;" styleClass="label1" stylesheets="@human.css" text="Option 1" wrapText="true">
+         <font>
+            <Font name="Montserrat Regular" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="next" layoutX="469.0" layoutY="427.0" onAction="#nextpushed" prefHeight="54.0" prefWidth="163.0" ripplerFill="#4d2ada" style="-fx-background-color: #0095ff;" text="Next step" textFill="WHITE">
+         <font>
+            <Font name="Raleway Medium" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

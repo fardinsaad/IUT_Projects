@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.control.Rating?>
+
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ratingcontroller">
+    <children>
+        <HBox prefHeight="24.0" prefWidth="690.0" style="-fx-background-color: #3B5998;">
+            <children>
+                <JFXButton fx:id="back6" onAction="#back6" prefHeight="42.0" prefWidth="80.0" text="&lt;--">
+                    <font>
+                        <Font name="Raleway ExtraBold" size="11.0" />
+                    </font>
+                </JFXButton>
+                <Pane prefHeight="57.0" prefWidth="586.0" />
+                <JFXButton fx:id="minimizeclicked" onAction="#minimizeclicked" prefHeight="26.0" prefWidth="52.0" text="-">
+                    <font>
+                        <Font name="Raleway ExtraBold Italic" size="22.0" />
+                    </font>
+                </JFXButton>
+                <JFXButton fx:id="closebutton" onAction="#closeclicked" prefHeight="30.0" prefWidth="52.0" text="X">
+                    <font>
+                        <Font name="Raleway ExtraBold" size="22.0" />
+                    </font>
+                </JFXButton>
+            </children>
+        </HBox>
+        <Rating fx:id="rate" layoutX="217.0" layoutY="189.0">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </Rating>
+        <Label layoutX="189.0" layoutY="59.0" prefHeight="47.0" prefWidth="338.0" text="Rate your Visit for">
+            <font>
+                <Font name="Britannic Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label fx:id="docname" layoutX="189.0" layoutY="106.0" prefHeight="47.0" prefWidth="338.0">
+            <font>
+                <Font name="Britannic Bold" size="24.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="finish" alignment="CENTER" layoutX="245.0" layoutY="275.0" mnemonicParsing="false" onAction="#finish" prefHeight="54.0" prefWidth="163.0" ripplerFill="#4d2ada" style="-fx-background-color: #0095ff;" text="Okey Dokey!" textFill="WHITE" />
+    </children>
+</AnchorPane>

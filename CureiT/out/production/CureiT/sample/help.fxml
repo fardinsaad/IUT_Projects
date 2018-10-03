@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="531.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.helpcontroller">
+   <children>
+      <HBox prefHeight="24.0" prefWidth="691.0" style="-fx-background-color: #3B5998;">
+         <children>
+            <JFXButton fx:id="backk" onAction="#backk" prefHeight="42.0" prefWidth="80.0" text="&lt;--">
+               <font>
+                  <Font name="Raleway ExtraBold" size="11.0" />
+               </font>
+            </JFXButton>
+            <Pane prefHeight="57.0" prefWidth="586.0" />
+            <JFXButton prefHeight="26.0" prefWidth="52.0" text="-">
+               <font>
+                  <Font name="Raleway ExtraBold Italic" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton prefHeight="30.0" prefWidth="52.0" text="X">
+               <font>
+                  <Font name="Raleway ExtraBold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane layoutX="354.0" layoutY="345.0" prefHeight="171.0" prefWidth="329.0" style="-fx-background-color: #0f6eb3;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="39.0" prefHeight="106.0" prefWidth="276.0" text="Click on the consult to&#10;easily set an appointment&#10;with a doctor near your area." textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Italic" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="345.0" prefHeight="171.0" prefWidth="329.0" style="-fx-background-color: #1080d0;">
+         <children>
+            <Label alignment="CENTER" layoutX="14.0" layoutY="33.0" prefHeight="106.0" prefWidth="276.0" text="Click on Emergency to&#10;get instant remedies!" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Italic" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="10.0" layoutY="160.0" prefHeight="171.0" prefWidth="329.0" style="-fx-background-color: #0f6eb3;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="33.0" prefHeight="106.0" prefWidth="276.0" text="Enter Cureit will&#10;direct you to an interface of&#10;a human body.&#10;" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Italic" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="354.0" layoutY="160.0" prefHeight="171.0" prefWidth="329.0" style="-fx-background-color: #1080d0;">
+         <children>
+            <Label alignment="CENTER" layoutX="27.0" layoutY="33.0" prefHeight="106.0" prefWidth="276.0" text="Click on any organ as per&#10;your desire for treating&#10;remedies or for consulting&#10;a doctor.&#10;" textFill="WHITE">
+               <font>
+                  <Font name="Montserrat Italic" size="17.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+            </Label>
+         </children>
+      </Pane>
+      <JFXButton fx:id="back" layoutX="551.0" layoutY="74.0" onAction="#backk" prefHeight="62.0" prefWidth="115.0" style="-fx-background-color: #2c3a51;" text="Head Back!" textFill="WHITE">
+         <font>
+            <Font name="Raleway SemiBold" size="13.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
