@@ -1,0 +1,8 @@
+
+malik(12)		fardin(5)
+fardin(12)		malik(5) 
+hello(12)		world(5) 
+dacvd(12)		dvcdav(4) 
+fardin(12)		malik(4) 
+fardin(12)		malik(4) 
+malik(12)		fardin(6) 

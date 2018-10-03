@@ -1,0 +1,49 @@
+# depslib dependency file v1.0
+1477604905 source:f:\c program\projects\checkers\checkers\checkers.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+
+1477605401 source:f:\c program\projects\checkers\checkers\main.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+
+1477604905 f:\c program\projects\checkers\checkers\checkers.h
+
+1478728019 source:e:\c programs\project\checkers\checkers.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+
+1478727349 e:\c programs\project\checkers\checkers.h
+
+1478727587 source:e:\c programs\project\checkers\main.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+
+1478728640 source:f:\checkers\checkers.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+
+1478727348 f:\checkers\checkers.h
+
+1478728930 source:f:\checkers\main.cpp
+	<bits/stdc++.h>
+	<conio.h>
+	<windows.h>
+	<time.h>
+	"checkers.h"
+

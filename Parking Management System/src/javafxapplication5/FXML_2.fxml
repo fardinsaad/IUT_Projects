@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="708.0" stylesheets="@../newCascadeStyleSheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication5.FXML_2Controller">
+   
+   <children>
+      <ImageView fitHeight="471.0" fitWidth="708.0" layoutY="1.0" onMouseClicked="#hideLabel" opacity="0.39" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CAR-PIC.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="t1" layoutX="285.0" layoutY="116.0" onMouseClicked="#hideLabel" prefHeight="44.0" prefWidth="199.0" promptText="Example : Saadman Malik">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="37.0" layoutY="116.0" prefHeight="44.0" prefWidth="193.0" text="Driver's Name" textAlignment="CENTER" underline="true" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.04980842911877394" />
+                  <Stop color="#572121" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <TextField fx:id="t2" layoutX="505.0" layoutY="196.0" onMouseClicked="#hideLabel" prefHeight="44.0" prefWidth="134.0" promptText="Example: 1234">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Button fx:id="backButton" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleBackButtonAction" prefHeight="32.0" prefWidth="82.0" styleClass="exit-button" text="Back">
+         <font>
+            <Font name="Arial Black" size="16.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="parkButton" layoutX="510.0" layoutY="388.0" mnemonicParsing="false" onAction="#goPark" prefHeight="54.0" prefWidth="154.0" styleClass="login-button" text="Park Vehicle">
+         <font>
+            <Font name="Arial" size="18.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="206.0" layoutY="1.0" prefHeight="101.0" prefWidth="392.0" styleClass="park-label" text="Vehicle Information" textAlignment="CENTER" textFill="#032c0d" underline="true" wrapText="true">
+         <font>
+            <Font name="Arial" size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="196.0" prefHeight="44.0" prefWidth="223.0" text="Vehicle Number" textAlignment="CENTER" underline="true" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.04980842911877394" />
+                  <Stop color="#5b2323" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <ChoiceBox fx:id="choice" layoutX="257.0" layoutY="206.0" prefHeight="25.0" prefWidth="134.0" />
+      <ChoiceBox fx:id="choice1" layoutX="402.0" layoutY="206.0" prefHeight="25.0" prefWidth="82.0" />
+      <Label fx:id="alert" layoutX="34.0" layoutY="399.0" prefHeight="32.0" prefWidth="279.0" text="Information Incorrect ! " textAlignment="CENTER" textFill="#ff1414" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label layoutX="14.0" layoutY="269.0" prefHeight="77.0" prefWidth="217.0" text="Any Preferred Parking Number ?" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Arial Bold" size="25.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#a80000" offset="0.2222222222222222" />
+                  <Stop color="#5b2323" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <CheckBox fx:id="cBox1" layoutX="257.0" layoutY="275.0" mnemonicParsing="false" onAction="#yesBox" prefHeight="32.0" prefWidth="113.0" text="YES" textFill="#11421a">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="cBox2" layoutX="257.0" layoutY="314.0" mnemonicParsing="false" onAction="#noBox" prefHeight="32.0" prefWidth="113.0" text="NO" textFill="RED">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </CheckBox>
+      <TextField fx:id="t3" layoutX="366.0" layoutY="269.0" onMouseClicked="#hideLabel" prefHeight="44.0" prefWidth="102.0" promptText="Example: 10" visible="false">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label fx:id="infoLabel" layoutX="516.0" layoutY="264.0" prefHeight="101.0" prefWidth="164.0" text="Park Numbers:&#10;1 to 15 - Sedan&#10;16 to 25 - SUV&#10;26 to 35 - MotorBike" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="Arial Bold Italic" size="17.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.01904761904761905">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.007662835249042145" />
+                  <Stop color="RED" offset="0.2720306513409961" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Label fx:id="alert1" layoutX="293.0" layoutY="399.0" prefHeight="32.0" prefWidth="279.0" text="Parking Full ! " textAlignment="CENTER" textFill="#ff1414" underline="true" visible="false" wrapText="true">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+         <effect>
+            <DropShadow color="WHITE" />
+         </effect>
+      </Label>
+      <Button fx:id="carMap" layoutX="350.0" layoutY="327.0" mnemonicParsing="false" onAction="#showCars" prefHeight="32.0" prefWidth="134.0" styleClass="login-button" text="Parking Area" textAlignment="CENTER" visible="false" wrapText="true">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
