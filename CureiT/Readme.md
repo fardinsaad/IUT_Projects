@@ -6,7 +6,7 @@
 - **Ahmed Rafayet** 
 
 ## Overview
-**CUREiT** is a medical emergency and appointment assistance software application designed to streamline patient-doctor interactions. The application aims to provide a simple, user-friendly interface where patients can consult doctors, set appointments, and seek emergency medical remedies. It utilizes a large database for managing medical information and provides services free of charge.
+**CUREiT** is a medical emergency and appointment assistance software application designed to streamline patient-doctor interactions. The application aims to provide a simple, user-friendly interface where patients can consult doctors, set appointments, and seek emergency medical remedies. It utilizes a large database for managing medical information and provides services free of charge. We developed this project in our junior year for the Software Engineering course.
 
 ## Why Use CUREiT?
 - **Easy-to-use interface**: Simple 2D model of a human body for interaction.
