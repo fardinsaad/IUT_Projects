@@ -9,7 +9,7 @@
 
 **Checkers** is a strategy board game played on an 8x8 board, where players move diagonally and capture opponent pieces by jumping over them. The objective of the game is to capture all of the opponent’s pieces or block them from making any legal moves.
 
-In this project, we developed a digital version of Checkers with several key features implemented in **C** and **C++**.
+In this project, we developed a digital version of Checkers with several key features implemented in **C** and **C++** in our **freshman year** for the **Structure Programming course**.
 
 ### Game Rules
 1. **Movement**: 
